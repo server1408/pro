@@ -1,0 +1,20 @@
+import tensorflow as tf 
+from tensorflow import keras 
+ 
+model = keras.Sequential([ 
+  keras.layers.Dense(10, activation='relu', input_shape=(2,)), 
+  keras.layers.Dense(1) 
+]) 
+ 
+model.compile(optimizer='adam', loss='mse') 
+ 
+import numpy as np 
+x_train = np.random.rand(100, 2) 
+y_train = np.dot(x_train, [2., 3.]) + 1 
+ 
+model.fit(x_train, y_train, epochs=10) 
+ 
+x_test = np.random.rand(10, 2) 
+predictions = model.predict(x_test) 
+ 
+print(predictions)

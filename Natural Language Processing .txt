@@ -1,0 +1,10 @@
+from nltk.chat.util import Chat, reflections 
+pairs =[ 
+    ['(hi|hello|hey|holla|hola)', ['Hey there !', 'Hi there !', 'Hey !']], 
+    ['(what is your name ?)', ['I am Monkey D Luffy']], 
+    ['(what do you do ?)', ['I am Emperor of the sea']], 
+    ['(what is your power ?)', ['I am Sun god NIKA!']] 
+] 
+ 
+chat = Chat(pairs, reflections) 
+chat.converse()

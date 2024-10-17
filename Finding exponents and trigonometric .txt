@@ -1,0 +1,17 @@
+import numpy as np 
+import scipy.special as sp 
+ 
+sin_value=np.sin(np.pi/2) 
+cos_value=np.cos(np.pi/2) 
+tan_value=np.tan(np.pi/2) 
+print(f"sin({np.pi/2})={sin_value}") 
+print(f"cos({np.pi/2})={cos_value}") 
+print(f"tan({np.pi/2})={tan_value}") 
+ 
+asin_value=np.arcsin(0.5) 
+acos_value=np.arccos(0.5) 
+atan_value=np.arctan(0.5) 
+ 
+print(f"arcsin(0.5)={np.degrees(asin_value)} degrees")   
+print(f"arccos(0.5)={np.degrees(acos_value)} degrees") 
+print(f"arctan(0.5)={np.degrees(atan_value)} degrees")

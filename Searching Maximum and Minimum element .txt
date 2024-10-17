@@ -1,0 +1,6 @@
+import numpy as np 
+array=np.array([69,96,99,14,3]) 
+max_element=np.max(array) 
+min_element=np.min(array) 
+print("Maximum element in the array:",max_element) 
+print("Minimum element in the array:",min_element)
